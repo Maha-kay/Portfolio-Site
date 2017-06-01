@@ -1,0 +1,16 @@
+{
+  "name": "gruntfile",
+  "version": "1.0.0",
+  "description": "images",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "maha",
+  "license": "ISC",
+  "devDependencies": {
+    "grunt": "^1.0.1",
+    "grunt-contrib-clean": "^1.0.0",
+    "grunt-responsive-images": "^1.10.1"
+  }
+}

@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Maha Saad | portfolio</title>
+        <link rel="icon" href="img/M.S.K.png">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/style.css">
+        <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Kalam:300,400,700" rel="stylesheet">
+    </head>
+    <body>
+            <ul class="colors"> <!-- idea from gitHub: RashaHussein -->
+                <li class="green"></li>
+                <li class="pink"></li>
+                <li class="blue"></li>
+                <li class="yellow"></li>
+                <li class="red"></li>
+            </ul>
+        <div class="container">
+            <header class="row">
+                <div class="col-md-6">
+                    <img src="img/M.S.K.png" alt="Maha logo" id="logo">
+                </div>
+                <div class="col-md-6 text-right text-uppercase">
+                    <h1 class="name">Maha Saad</h1>
+                    <h3 class="ninja">Front-end Ninja</h3>
+                </div>
+            </header>
+            <div class="row">
+                <div class="col-md-12">
+                    <hr>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-5 paddingr">
+                    <picture class="pichello imgclear">
+                        <source media="(max-width: 730px)" srcset="images/Hello-200.jpg" />
+                        <img src="img/Hello.jpg" alt="hello" id="biopic">
+                    </picture>
+                </div>
+                <div class= "col-md-7 text-justify paddingr">
+                    <p class="paragraph"> I'm a front-end web geek who loves and aims to create user-friendly and beautiful websites. I enjoy sharing my projects that I will complete through my learning journey at Udacity.</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <hr>
+                </div>
+            </div>
+            <div class="row backimg">
+                <div class="col-md-12">
+                    <h2 class="text_muted">Featured Work</h2>
+                </div>
+            </div>
+            <div class="row text-center">
+                <article>
+                <div class="col-md-4">
+                <figure>
+                    <picture >
+                      <source media="(max-width: 730px)" srcset="images/myresume200.jpg" />
+                      <img id="myImg" src="img/myresume.jpg" alt="Resume project for Udacity Front-end Web Development Nanodegree">
+                    </picture>
+                    <figcaption>Online Resume</figcaption>
+                </figure>
+                    <p><a href="https://github.com/maha-kay" target="_blank">Link to project</a></p>
+                      <!-- The Modal -->
+                    <div id="myModal" class="modal">
+                      <!-- The Close Button -->
+                      <span class="close" onclick="document.getElementById('myModal').style.display='none'">&times;</span>
+                      <!-- Modal Content (The Image) -->
+                      <img class="modal-content" id="img01">
+                      <!-- Modal Caption (Image Text) -->
+                      <div id="caption"></div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                <figure>
+                    <picture >
+                      <source media="(max-width: 730px)" srcset="images/Soon-200.png" />
+                      <img src="img/Soon.png" alt="coming soon">
+                    </picture>
+                    <figcaption>Classic Arcade Game Clone</figcaption>
+                </figure>
+                    <p><a href="https://github.com/maha-kay" target="_blank">Link to project</a></p>
+                </div>
+                <div class="col-md-4">
+                <figure>
+                    <picture >
+                      <source media="(max-width: 730px)" srcset="images/Soon-200.png" />
+                      <img src="img/Soon.png" alt="coming soon">
+                    </picture>
+                    <figcaption>Website Optimization</figcaption>
+                </figure>
+                    <p ><a href="https://github.com/maha-kay" target="_blank">Link to project</a></p>
+                </div>
+            </article>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <hr>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <footer>
+                      <div class="row">
+                        <div class="col-md-4">
+                            <a class="contactMe" abbr title="Call me: +966539299939">Contact Me :)</a>
+                            <a href="mailto:Maha.Alkhathlan@mail.com" target="_top" class="fa fa-envelope-o fa-lg" aria-hidden="true"> <abbr title="Maha.Alkhathlan@gmail.com"> </a> </abbr>
+                            <a id="github" href="https://github.com/Maha-kay" target="_blank" class="fa fa-github fa-lg" aria-hidden="true"> <abbr title="Maha.Alkhathlan@gmail.com"></a> </abbr>
+                        </div>
+                    </div>
+                    </footer>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
+
+<script>
+    // Get the modal
+var modal = document.getElementById('myModal');
+
+// Get the image and insert it inside the modal - use its "alt" text as a caption
+var img = document.getElementById('myImg');
+var modalImg = document.getElementById("img01");
+var captionText = document.getElementById("caption");
+img.onclick = function(){
+    modal.style.display = "block";
+    modalImg.src = this.src;
+    captionText.innerHTML = this.alt;
+}
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  modal.style.display = "none";
+}
+</script>
